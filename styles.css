@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff0000, #0051ff); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .game-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(172, 224, 29);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  
+  .cell {
+    width: 100%;
+    height: 100px;
+    background-color: #00b7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0011ff;
+  }
+  
+  .winner-message {
+    margin-top: 20px;
+    font-size: 3em;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  #new-game-btn {
+    background-color: #009623;
+    margin-top: 10px;
+  }
+  
+  #new-game-btn:hover {
+    background-color: #4400ff;
+  }
+  
+  @media (max-width: 480px) {
+    .cell {
+      height: 80px;
+    }
+  }
+  
